@@ -1,44 +1,43 @@
-package noSqlTable;
+package sqlQueriesLogics;
 
+/*
+ * PROGRAM 48:
+ * To design the Logics of SQL Queries in Java.
+ * */
 public class Employee {
+	String name;
+	int empID;
+	int deptNo;
+	int managerNo;
+	String jobRole;
+	String hireDate;
+	double sal;
+	double comm;
 	
-	String name ;
-	int empid ;
-	int deptNo ;
-	int manageNo ;
-	String hireDate ;
-	double salary ;
-	double comm ;
-	String job ;
+	
 	public Employee() {
-		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Employee(String name, int empid, int deptNo, int manageNo, String hireDate,
-			double salary, double comm, String job) {
+
+	public Employee(String name, int empID, int deptNo, int managerNo, 
+			String jobRole, String hireDate, double sal, double comm) {
 		super();
 		this.name = name;
-		this.empid = empid;
+		this.empID = empID;
 		this.deptNo = deptNo;
-		this.manageNo = manageNo;
+		this.managerNo = managerNo;
+		this.jobRole = jobRole;
 		this.hireDate = hireDate;
-		this.salary = salary;
+		this.sal = sal;
 		this.comm = comm;
-		this.job = job;
 	}
+	
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", empid=" + empid + ", deptNo=" + deptNo + ", manageNo=" + manageNo
-				+ ", hireDate=" + hireDate + ", salary=" + salary + ", comm=" + comm + ", job=" + job + "]";
+		return "[name= "+name+", empID= "+empID+", deptNo= "+deptNo+", managerNo= "
+				+managerNo+", jobRole= "+jobRole+", hireDate= "+hireDate+", sal="+sal+", "
+				+ "comm= "+comm+"]";
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 }
